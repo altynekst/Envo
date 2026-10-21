@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@mipmap/ic_launcher" android:enabled="true" android:shortcutId="play-vulkan" android:shortcutShortLabel="@string/shortcut_play_vulkan_short">
+        <intent android:targetPackage="org.envy.client" android:action="android.intent.action.VIEW" android:targetClass="org.envy.client.ClientActivity">
+            <extra android:name="gfx-backend" android:value="Vulkan" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@mipmap/ic_launcher" android:enabled="true" android:shortcutId="play-gles" android:shortcutShortLabel="@string/shortcut_play_gles_short">
+        <intent android:targetPackage="org.envy.client" android:action="android.intent.action.VIEW" android:targetClass="org.envy.client.ClientActivity">
+            <extra android:name="gfx-backend" android:value="GLES" />
+        </intent>
+    </shortcut>
+</shortcuts>
